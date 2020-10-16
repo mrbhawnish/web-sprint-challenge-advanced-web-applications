@@ -28,9 +28,19 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain what a token is used for.
+  - Token or JWT is a string of cryptic text that's issued by a server, which can be stored in the client-side. using localstorage or session storage.
+   The server then can tell the client it issued the token. It can also read the token and make the decision for data transfer based on the client's permission.
 2. What steps can you take in your web apps to keep your data secure?
+   -Once we get the token issued from the server, we can add two layers of protection to our apps; 
+   1- Add protected routes:  routes that should only render with authentication(when the user is logged in)
+   2- Sending API requests with our authentication headers created with axiosWithAuth.
 3. Describe how web servers work.
+   Web servers are connected to the internet and stores the code for our different websites to be shared across the world at all times as per the user's request, and thus we can say our web servers hosts and serves our webpages.
 4. Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+    Create: .post; takes a data object as the second argument, and it's data that we are intending to create.
+    Read: .get; Retrieves a specific item from our data or can also get our whole data array/object.
+    Update: .put; It's used to change a resource's information, passing in the new data as the second argument.
+    Delete: .delete; Delete a resource's information from our database.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
