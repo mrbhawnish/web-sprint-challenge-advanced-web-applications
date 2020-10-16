@@ -12,9 +12,10 @@ useEffect(() =>{
   axiosWithAuth()
   .get("http://localhost:5000/api/colors")
   .then(res => {
-    setColorList(res.data)
+    setColorList(...colorList, res.data)
 
   })
+  .catch(err => console.log(err))
  }, [])
   return (
     <>
